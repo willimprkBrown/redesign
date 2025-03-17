@@ -1,0 +1,132 @@
+@font-face {
+    font-family: 'wes_regular';
+    src: url('../assets/Wes FY W03 Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'wes_bold';
+    src: url('../assets/Wes FY W03 Bold.ttf') format('truetype');
+    font-weight: normal;
+}
+
+.header-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f2f2f8;
+    z-index: 1000;
+    padding: 15px 0;
+}
+
+.header-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.header-img {
+    width: 300px;
+    padding-left: 15px;
+}
+
+.nav-menu {
+    display: flex;
+}
+
+#navbar {
+    font-family: 'wes_bold';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 40px;
+}
+
+#navbar li {
+    list-style: none;
+    position: relative;
+    display: block;
+}
+
+#navbar li a {
+    text-decoration: none;
+    color: #191919;
+    font-size: 1rem;
+    position: relative;
+    display: inline-block;
+    top: 5px;
+    padding: 0px 30px;
+}
+
+#navbar li:hover::after {
+    content: "";
+    width: 70%;
+    height: 6px;
+    background-color: #191919;
+    position: absolute;
+    top: -38px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 0 40px;
+}
+
+@media screen and (max-width: 900px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        background-color: #f2f2f8;
+        text-align: center;
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-in-out, opacity 0.2s ease-in-out;
+    }
+
+    .nav-menu.active {
+        display: flex;
+        max-height: 500px;
+        opacity: 1;
+    }
+
+    #navbar {
+        flex-direction: column;
+    }
+
+    #navbar li {
+        padding: 15px 0;
+    }
+
+    #navbar li:hover::after {
+        content: "";
+        width: 70%;
+        height: 2px;
+        background-color: #191919;
+        position: absolute;
+        top: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .header-img {
+        width: 250px;
+    }
+}
+

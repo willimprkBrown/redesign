@@ -1,43 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autonodyne Software</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header-container">
+        <div class="header-grid">
+            <div class="logo">
+                <a href="#home">
+                    <img src="assets/logoExtended.png" alt="Logo" class="header-img">
+                </a>
+            </div>
+            <div class="menu-icon" id="menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav class="nav-menu" id="nav-menu">
+                <ul id="navbar">
+                    <li><a href="#home" onclick="closeMenu()">Solutions</a></li>
+                    <li><a href="#career" onclick="closeMenu()">Careers</a></li>
+                    <li><a href="#about" onclick="closeMenu()">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <!-- Main Section -->
+    <main>
+        <section id="home"></section>
+        <section class="temp-background"></section>
+        <section id="solution" class="solution-container">
+            <div class="p1">
+                <div class="header-one">
+                    <span>C2 & Autonomy software for your mission</span>
+                </div>
+                <div class="header-two">
+                    <span>Blending simplicity and power as functional art</span>
+                </div>
+                <img src="https://images.squarespace-cdn.com/content/v1/6744b6486021a751daf19fe4/b3ca3769-8d9b-4048-b741-7451f200c4ad/AutonodyneSoftware_Unmanned-Multi-Domain-Vehicles.png?format=1500w" id="int-img" alt="productImages">
+            </div>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+            <div class="p2">
+                <div class="header-three">
+                    <span>Software Command & Control</span>
+                </div>
+                <div class="desc">
+                    <div class="left-column">
+                        <img src="https://video.squarespace-cdn.com/content/v1/6744b6486021a751daf19fe4/a3d28df6-86af-43ed-a54a-e49ca180f3e2/thumbnail" id="scc-img" alt="productImage">
+                    </div>
+                    <div class="right-column">
+                        <div class="description">
+                            <h2>Autonomous Multi-Vehicle Swarming</h2>
+                            <p>Team group 1 to group 5 UVs of air, sea, and land domains for your mission requirements</p>
+                            <h2>Manned and Unmanned Vehicle Teaming (MUM-T)</h2>
+                            <p>Pair UV teammates with crewed forces to plan, conduct, and analyze successful missions</p>
+                            <h2>Autonomy in System Design</h2>
+                            <p>Takes more of the cognitive burden off human operators/supervisors and serves as a force multiplier to make the human and machine a more capable team.</p>
+                            <h2>Counter UAS & Red-Teaming Services</h2>
+                            <p>Testing of 3rd-party counter-UAS systems, training aids for organizations preparing for deployment, testing detection and tracking systems, identifying gaps, hardening protection of high value assets, etc.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+            <div class="p3">
+                <div class="header-four">
+                    <span>Software Designed for Human Operators</span>
+                </div>
+                <div class="desc2">
+                    <p>Simple and clear Handoff to any control node</p>
+                    <p>Manned-Unmanned Teaming in high workload conditions</p>
+                    <p>Advanced situational awareness & ease of mission editing</p>
+                </div>
+                <img src="https://images.squarespace-cdn.com/content/v1/6744b6486021a751daf19fe4/51d76f8a-5e17-4dec-aca7-e12555ec59a0/AutonodyneSoftware_UVs-SoftwareOptions.jpg?format=1500w" id="sdho-img" alt="productImage">
+            </div>
+
+            <div class="p4">
+                <div class="header-five">
+                    <span>Software for your UVs</span>
+                </div>
+                <p>Autonodyne software has been integrated on more than 60 makes/models of unmanned platforms. Enabling support for 15 communication protocols, 16 datalink radios, and the ability to host the software on multiple hardware platforms.</p>
+                <img src="https://video.squarespace-cdn.com/content/v1/6744b6486021a751daf19fe4/04b5f83d-f751-4ad9-86f9-2d84ade2aaef/thumbnail" id="suv-img" alt="demo video">
+            </div>
+        </section>
+
+        <section class="solution-container-alt">
+            <div class="p5">
+                <div class="img-set">
+                    <img src="https://video.squarespace-cdn.com/content/v1/6744b6486021a751daf19fe4/c12cfba1-1e37-4d5f-b244-7b2be8597d2c/thumbnail" class="drone-img" alt="drone gif">
+                    <img src="https://video.squarespace-cdn.com/content/v1/6744b6486021a751daf19fe4/19f58c45-4c26-4ff9-9fa6-62862419cb8e/thumbnail" class="drone-img" alt="drone gif">
+                    <img src="https://video.squarespace-cdn.com/content/v1/6744b6486021a751daf19fe4/4e4039c3-0a16-4a6b-abad-4587c44fc14c/thumbnail" class="drone-img" alt="drone gif">
+                </div>
+                <h2>Autonomy Behaviors</h2>
+                <p>Autonodyne’s library of software behaviors permits your vehicle or team of vehicles to perform a variety of mission-specific maneuvers autonomously.</p>
+                <p>For a complete inventory of our behaviors see<br><a href="#home">Autonomy Behaviors.</a></p>
+                <div class="img-set">
+                    <img src="https://video.squarespace-cdn.com/content/v1/6744b6486021a751daf19fe4/c12cfba1-1e37-4d5f-b244-7b2be8597d2c/thumbnail" class="drone-img" alt="drone gif">
+                    <img src="https://video.squarespace-cdn.com/content/v1/6744b6486021a751daf19fe4/aa78883b-7d36-4c6c-ac19-a65e12e7e71c/thumbnail" class="drone-img" alt="drone gif">
+                    <img src="https://video.squarespace-cdn.com/content/v1/6744b6486021a751daf19fe4/23e88e38-12ba-44a9-b77f-9490b53cbb1c/thumbnail" class="drone-img" alt="drone gif">
+                </div>
+            </div>
+        </section>
+
+        <section id="solution" class="solution-container">
+            <div class="p6">
+                <div class="type-grid">
+                    <div class="type-column">
+                        <h2>Multi-Vehicle Control</h2>
+                        <img src="https://images.squarespace-cdn.com/content/v1/6744b6486021a751daf19fe4/bd856063-f22f-4e08-8ef2-ec1810ebea7e/15UAV-Takeoff.jpg?format=1500w" class="type-img" alt="operation">
+                        <p>Designed to support swarm interoperability that can be handed off to other control nodes while still inflight, allowing transfer of control or mission data between various commanders, services, and/or coalition partners.</p>
+                    </div>
+                    <div class="type-column">
+                        <h2>NCAs</h2>
+                        <img src="https://images.squarespace-cdn.com/content/v1/6744b6486021a751daf19fe4/f27489c2-c3fb-4d91-9314-b4d22f02b163/NCASVehicles.png?format=1500w" class="type-img" alt="operation">
+                        <p>Trained to sense environment, generate a shared "world view", ingest human intent, and decide how to collaboratively accomplish the mission.</p>
+                    </div>
+                    <div class="type-column">
+                        <h2>MUM-T</h2>
+                        <img src="https://images.squarespace-cdn.com/content/v1/6744b6486021a751daf19fe4/86317db0-4c93-440d-a2d4-e0bf62d06a38/MUM-T_CCAs.png?format=1500w" class="type-img" alt="operation">
+                        <p>Uses a task-based approach (e.g. Autonomy Behaviors) to provide operationally relevant functionality relayed to the human on-the-loop serving as force multipliers.</p>
+                    </div>
+                    <div class="type-column">
+                        <h2>Multi-Domain Operations</h2>
+                        <img src="https://images.squarespace-cdn.com/content/v1/6744b6486021a751daf19fe4/0611102f-1855-4cc7-9adb-2b308a19ccb9/Multi-DomainUVs.png?format=100w%20100w,%20" class="type-img" alt="operation">
+                        <p>Utilizes multiple types of Uvs to perform "wolf pack" like behaviors. Heterogenous groupings/teams perform multi-domain missions and tasks.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-container">
+            <div class="p7">
+                <h1>About Our Team</h1>
+                <img src="https://video.squarespace-cdn.com/content/v1/6744b6486021a751daf19fe4/19290832-2a9b-466c-b2c3-5310edc0bd35/thumbnail" class="about-video" alt="about video">
+            </div>
+        </section>
+
+        <section id="career" class="career-container">
+            <div class="p8">
+                <h1>Careers & Internships</h1>
+                <h2>Careers</h2>
+                <div class="career-grid">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <div class="button-grid">
+                        <button>Accountant</button>
+                    </div>
+                </div>
+                <h2>Internships</h2>
+                <div class="career-grid">
+                    <p>Paid internships are available to outstanding students pursuing careers in the computer science and autonomy industries. Interns work along with Autonodyne staff on a variety of assignments, receive mentorship, and quickly gain experience. Applications are on a rolling basis. For inquiries, please email HR@autonodyne.com.</p>
+                    <div class="button-grid">
+                        <button>Software Engineer Intern</button>
+                        <button>Flight Test Engineer Intern</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer-container">
+        <div class="footer-grid">
+            <div class="logo">
+                <img src="assets/logo.png" alt="Logo" class="footer-img">
+            </div>
+            <div class="email">
+                <p>info@autonodyne.com</p>
+            </div>
+            <div class="address">
+                <p>320 Congress Street, 1st Floor, Boston, MA, 02210</p>
+            </div>
+            <div class="social-media">
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu Toggle -->
+    <script>
+        const menuIcon = document.getElementById('menu-icon');
+        const navMenu = document.getElementById('nav-menu');
+
+        menuIcon.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        function closeMenu() {
+            navMenu.classList.remove('active');
+        }
+    </script>
+</body>
 </html>

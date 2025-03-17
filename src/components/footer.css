@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'industry';
+    src: url('../assets/Industry-Book.ttf') format('truetype');
+}
+
+.footer-container {
+    font-family: 'industry';
+    background-color: #f2f2f8;
+    padding: 20px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-img {
+    width: 100px;
+}
+
+.social-media a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #191919;
+}
+
+.email {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    color: #191919;
+}
+
+.address {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    color: #191919;
+}
+
+@media (max-width: 900px) {
+    .footer-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .footer-img {
+        width: 75px;
+    }
+}
