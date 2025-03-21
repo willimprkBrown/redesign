@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'industry';
-    src: url('../assets/Industry-Book.ttf') format('truetype');
+    src: url('Industry-Book.ttf') format('truetype');
 }
 
 .footer-container {
@@ -36,6 +36,10 @@
 .address {
     font-size: clamp(1rem, 2vw, 1.2rem);
     color: #191919;
+}
+
+.fab {
+    font-size: 2rem;
 }
 
 @media (max-width: 900px) {

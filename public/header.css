@@ -1,12 +1,12 @@
 @font-face {
     font-family: 'wes_regular';
-    src: url('../assets/Wes FY W03 Regular.ttf') format('truetype');
+    src: url('Wes FY W03 Regular.ttf') format('truetype');
     font-weight: normal;
 }
 
 @font-face {
     font-family: 'wes_bold';
-    src: url('../assets/Wes FY W03 Bold.ttf') format('truetype');
+    src: url('Wes FY W03 Bold.ttf') format('truetype');
     font-weight: normal;
 }
 
